@@ -12,4 +12,3 @@ describe('Simple App Test', function() {
         expect(sum(2, 3)).to.equal(5);
     });
 });
-// test
