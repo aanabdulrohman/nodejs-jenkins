@@ -1,11 +1,13 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+// index.js
 
-app.get('/', (req, res) => {
-  res.send('Hello, Jenkins!');
-});
+export function isTrue() {
+  return true;
+}
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+export function sum(a, b) {
+  return a + b;
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  console.log('App is running...');
+}
