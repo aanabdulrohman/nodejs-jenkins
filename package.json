@@ -5,6 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev",
     "test": "mocha"
   },
   "devDependencies": {
